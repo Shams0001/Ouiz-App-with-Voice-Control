@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+
+}
+
+body{
+    background-color: rgb(7, 7, 61);
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    /* border: solid cyan; */
+    /* background-color: rgb(46 0 46); */
+    display: flex;
+    padding: 0;
+    background-color: rgb(36, 95, 75);
+}
+
+#navbar ul {
+    /* border: yellowgreen solid; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+#navbar li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: goldenrod;
+}
+#navbar .logo h1 {
+    /* border: solid yellowgreen; */
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    position: relative;
+    right: 24px;
+    bottom: 4px;
+}
+#navbar .userlogo{
+    position: absolute;
+    right: 70px;
+    padding: 0;
+    margin: 0;
+    
+}
+#navbar .userBtn img{
+    /* background-image: url(https://images.app.goo.gl/GgWU7zUcVZrcGgRb6); */
+    /* background-size: cover; */
+    width: 70px;
+    height: 63px;
+    border-radius: 200px;
+}
+#navbar .userBtn{
+    border-radius: 80px;
+    cursor: pointer;
+    outline: none;
+}
+
+.content1{
+    /* border: solid white; */
+    display: flex;
+    margin:20;
+    position: absolute;
+    top: 430px;
+    left: 15px;
+    z-index: -1;
+    /* width: 100vh; */
+}
+.content1 img{
+    width: 260px;
+    height: 260px;
+    border-radius: 15%;
+    padding: 15px;
+    transition: all .3s ease-in;
+    
+}
+.content1 img:hover{
+    /* box-shadow:2px 2px 20px white; */
+    transform: scale(1.2);
+}

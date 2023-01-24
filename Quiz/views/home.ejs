@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+        * {
+            margin: 0;
+            /* padding: 0; */
+
+        }
+
+        /* .navbar{
+    border: solid yellow;
+    width: 50%;
+} */
+        body {
+            background: center / cover no-repeat url(../static/bg2.jpg);
+        }
+
+        #navbar {
+            /* border: solid cyan; */
+            /* background-color: rgb(46 0 46); */
+            display: flex;
+        }
+
+        #navbar ul {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+        }
+
+        #navbar li a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #navbar li a:hover {
+            color: goldenrod;
+        }
+
+        #navbar .rnItem {
+            list-style: none;
+            padding: 0 10px;
+            /* padding: 0 10px 0 550px; */
+        }
+
+        #navbar .home {
+            list-style: none;
+            /* padding: 0 15px 0 150px; */
+        }
+
+        .rightNav {
+            position: absolute;
+            right: 10px;
+            top: 7px;
+        }
+
+        .rightNav input {
+            margin-right: 38px;
+        }
+
+        input {
+            width: 150px;
+            height: 20px;
+            /* position: absolute;
+    right: 300px;
+    top: 19px; */
+            outline: none;
+            transition: all .3s ease-in-out;
+            /* animation-name: searchbox;
+    animation-duration: 2s;
+    animation-iteration-count: 5; */
+        }
+
+        input:hover {
+
+            width: 250px;
+        }
+
+        /* .navbar{
+    position: fixed;
+    width: 1500px;
+} */
+        #navbar .logo h1 {
+            font-size: 50px;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+            position: relative;
+            right: 24px;
+            bottom: 4px;
+        }
+
+        /* .logo img{
+    height: 48px;
+    width: 123px;
+    
+} */
+        #introSection {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 100%;
+            /* border: solid yellow; */
+            /* background: center / cover no-repeat url(../static/introw.jpg); */
+            /* background: center / cover no-repeat url(../static/imgs/bg1.jpg); */
+        }
+
+        #introSection h1 {
+            color: white;
+            padding: 5px;
+            justify-content: center;
+            position: relative;
+            right: 0px;
+            left: 30px;
+            top: 150px;
+            font-size: 40px;
+        }
+
+        #aboutSection {
+            height: 150px;
+            /* border: solid blue; */
+            color: white;
+        }
+
+        #aboutSection h1 {
+            text-align: center;
+        }
+
+        #contactSection {
+            height: 250px;
+            /* border: solid darkgreen; */
+            display: block;
+            width: 92%;
+            margin: auto;
+            color: white;
+
+        }
+
+        #contactSection h1 {
+            text-align: center;
+        }
+
+        .card {
+            border: solid coral;
+            border-radius: 15px;
+            width: 28%;
+            height: 200px;
+            display: inline-block;
+            margin: 10px 30px;
+
+        }
+
+        .card h3 {
+            text-align: center;
+        }
+
+        .card-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-img {
+            height: 100px;
+        }
+
+        .card-img img {
+            height: inherit;
+        }
+
+        #footer {
+            height: 20px;
+            /* border: solid red; */
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <div class="logo">
+                <h1>Quiz </h1>
+            </div>
+            <li class="home"><a href="/">Home</a></li>
+            <li><a href="#contact">Contact Us</a> </li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="rightNav">
+            <ul><input type="text" placeholder="Search here" />
+                <li class="rnItem"><a href="/login">Login</a></li>
+                <li class="rnItem">|</li>
+                <li class="rnItem"><a href="/register">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="background" id="introSection">
+        <h1>Explore as much as you can and </h1>
+        <h1>Become best out of the best</h1>
+    </section>
+    <section id="contactSection">
+        <h1>Contact Us </h1>
+        <div class="card">
+            <h3>Dance Perfection</h3>
+            <div class="card-box">
+                <div class="card-img"><img src="../static/imgs/pose2.png" alt="" /></div>
+                <div class="card-content"> </div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Dance the way you want</h3>
+            <div class="card-box">
+                <div class="card-img"><img src="../static/imgs/pose2.png" alt="" /></div>
+                <div class="card-content"> </div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Expert advice</h3>
+            <div class="card-box">
+                <div class="card-img"><img src="../static/imgs/pose2.png" alt="" /></div>
+                <div class="card-content"> </div>
+            </div>
+        </div>
+    </section>
+    <section id="aboutSection">
+        <h1>About Us</h1>
+    </section>
+</body>
+
+</html>
